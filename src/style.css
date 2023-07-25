@@ -20,6 +20,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 h1 {
@@ -53,8 +54,10 @@ a > img {
   width: 40px;
 }
 
-a:hover {
-  transform: translateY(-10px);
+@media not (hover: none) {
+  a:hover {
+    transform: translateY(-10px);
+  }
 }
 
 #app {
